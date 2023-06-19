@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/8e448d6124.js" crossorigin="anonymous"></script>
+    <title>Christina's Portfolio</title>
+</head>
+<body>
+    <!------------------------- Homepage ------------------------->
+
+    <div id="header">
+        <nav class="navbar justify-content-end">
+            <!-- <img src="images/logo.png" class="logo"> -->
+            <ul class="nav-list">
+                <li><a href="#">Home</a></li>         
+                <li><a href="#about">About</a></li>     
+                <li><a href="#services">Services</a></li>     
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li> 
+            </ul>
+        </nav>
+
+        <div class="header-text">
+            <h1>Christina Yuan</h1>
+            <h2>Front-end Developer</h2>
+        </div>
+    </div>
+
+    <!---------------------------- About ----------------------------->
+    <div id="about">
+        <div class="container">
+            <i class="fa-solid fa-user title-icons"></i>
+            <h1 class="title">About me</h1>
+            <p class="about-me-text">
+                I am a current Master of IT student at the University of Melbourne
+                with three years of self-taught programming experiences and one year of
+                freelancing experience as a front-end developer. <br><br>
+
+                I completed my undergraduate sutdy majoring psychology. My understanding
+                of human behavioir allows me to connect with clients and understand their
+                needs on a deeper level. 
+            </p><br>
+            <!-- The clicking is not working -->
+            <div class="tab-titles">
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                <p class="tab-links" onclick="opentab('tech_stack')">Tech Stack</p>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>2022 Dec - pres.</span><br>Freelancing Front-end Developer</li><br>
+                    <li><span>2022 Dec - pres.</span><br>Programming tutor</li><br>
+                    <li><span>2021 Nov - 2023 Feb</span><br>Research Assistant @ Chinese Academy of Science</li>
+                </ul>
+            </div>
+            <div class="tab-contents active-tab" id="education">
+                <ul>
+                    <li>
+                        <span>Master of Information Technology, Specialise in Artificial Intelligence</span><br>
+                        The University of Melbourne
+                    </li><br>
+                    <li>
+                        <span>Bachelor of Arts, Major in Psychology</span><br>
+                        The University of Melbourne
+                    </li>  
+                </ul>
+            </div>
+            <div class="tab-contents" id="tech_stack">
+                <ul>
+                    <li><span>Web Development</span><br>HTML CSS SaSS Bootstrap TypeScript Angular</li><br>
+                    <li><span>JavaScript</span><br>JavaScript Vue.js React.js Redux.js Express.js jQuery JSON</li><br>
+                    <li><span>Databases</span><br>Python R PostgreSQL MySQL Bash</li><br>
+                    <li><span>Data Visualization</span><br>d3</li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <!--------------------------- Services --------------------------->
+    <div id="services">
+        <div class="container">
+            <i class="fa-solid fa-bell-concierge title-icons"></i>
+            <h1 class="title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Turn the website of your dream into reality!</p>
+                    <a href=""#>Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chalkboard"></i>
+                    <h2>E-Commerce</h2>
+                    <p>Launch your products with e-Commerce right now!</p>
+                    <a href=""#>Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>I know you've thought about building your own app on an innovative idea! 
+                        I can help you with that!</p>
+                    <a href=""#>Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Data Analysis</h2>
+                    <p>Don't know what to do with your data? I'm here to help! 
+                        You'll get insights into your data in no time!</p>
+                    <a href=""#>Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------- Portfolio ---------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <i class="fa-solid fa-gift title-icons"></i>
+            <h1 class="title">My Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/cafe.png">
+                    <div class="layer">
+                        <h3>Café</h3>
+                        <p>Wouldn't you wish Leblanc is real. Wait for it.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/protein.jpeg">
+                    <div class="layer">
+                        <h3>E-Commerce Website</h3>
+                        <p>Shop here with Executive Protein!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/judo.jpeg">
+                    <div class="layer">
+                        <h3>UoM Judo Club Website</h3>
+                        <p>Sign up to your soon-to-be favourite Judo Club at the University of Melbourne!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/ripple.jpeg">
+                    <div class="layer">
+                        <h3>Startup Website</h3>
+                        <p>Ripple is here to help you connect with psychologists with an afforable price!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/mental_health.jpeg">
+                    <div class="layer">
+                        <h3>Mental Health App</h3>
+                        <p>Here we finally have a Mental Health app that is science-based.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/mandarin_tutor.jpeg">
+                    <div class="layer">
+                        <h3>Mandarin Tutor</h3>
+                        <p>This is my side hustle as a Mandarin tutor.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Christina11010" target="_blank" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!--------------------------- Contact ------------------------------>
+    <div id="contact">
+        <div class="container">
+            <i class="fa-solid fa-microphone title-icons"></i>
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-info">
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>christina0606yy@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+61 451 300 664</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/christina-yuan-39bb3416b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Christina11010" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://twitter.com/Yue_Chris606" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="images/my-cv.pdf" target="_blank"><i class="fa-solid fa-download"></i> Resume</a>
+                </div>
+            </div>
+            <form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            
+        </div>
+    </div>
+
+    <!--------------------------------- Copyright ----------------------------------->
+    <footer>
+        <p>Copyright @ Christina. Made with <i class="fa-solid fa-heart"></i> by Christina Yuan</p>
+    </footer>   
+    <script>
+        // About me section
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
