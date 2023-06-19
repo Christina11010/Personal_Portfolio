@@ -544,3 +544,9 @@ footer i{
         padding: 60px 20px;
     }
 }
+
+#msg{
+    color:whitesmoke;
+    margin-top: -10px;
+    display: block;
+}
