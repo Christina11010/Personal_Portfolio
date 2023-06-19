@@ -192,13 +192,13 @@
                     <a href="images/my-cv.pdf" target="_blank"><i class="fa-solid fa-download"></i> Resume</a>
                 </div>
             </div>
-            <form>
+            <form name="submit-to-google-sheet">
                 <input type="text" name="Name" placeholder="Your Name" required>
                 <input type="email" name="Email" placeholder="Your Email" required>
                 <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                 <button type="submit" class="btn btn2">Submit</button>
             </form>
-            
+            <span id="msg"></span>
         </div>
     </div>
 
@@ -221,6 +221,25 @@
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwiJ9wWb9Xwyd-r4YkGiE33m5y1MbNnKJwoQjbTbAxls1dSZfeJTNFnvddSSiFO62Fa/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Thanks for your message! I will get back to you ASAP ;)"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset // reset the form
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
     </script>
 </body>
 </html>
